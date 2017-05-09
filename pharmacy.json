@@ -1,0 +1,41 @@
+{
+	"Pharmaceutical": {
+		"name": "Roche Canada",
+		"about": "They develop highly effective drugs for major diseases, with special emphasis on cancer related medicines.",
+		"url": "http://www.rochecanada.com",
+		"phone": "1-800-561-1759",
+		"logo": "roche-logo.png",
+		"lat": "43.606787",
+		"long": "-79.753184",
+		"products": [{
+			"brandname": "Actrema",
+			"drugname": "Tocilizumab",
+			"drugdesc": "Used to treat adults with moderate to server rheumatoid arthritis.",
+			"mode": "Intravenous",
+			"contra1": "Allergic to tocilizumab",
+			"contra2": "If you have an active infection"
+		}, {
+			"brandname": "Cytovene",
+			"drugname": "Ganciclovir",
+			"drugdesc": "Used to treat cytomegalovirus retinitis for people with immunodeficiency syndrome (AIDS)",
+			"mode": "Injection",
+			"contra1": "If the patient has ever had a serious reaction to ganciclovir",
+			"contra2": "If the patient has ever had a serious reaction to any of the non-medicinal ingredients"
+		}, {
+			"brandname": "Kadcyla",
+			"drugname": "trastuzumab emtansine",
+			"drugdesc": "A white to off-white powder used to treat people with breast cancer",
+			"mode": "Intravenous",
+			"contra1": "allergic to trastuzumab emtansine",
+			"contra2": "allergic to any of the non-medicinal ingredients"
+		}, {
+			"brandname": "Pulmozyme",
+			"drugname": "dornase alfa",
+			"drugdesc": "Used for patients with cystic fibrosis to help break down thick mucous in the airways",
+			"mode": "Inhaler",
+			"contra1": "allergic to dornase alfa",
+			"contra2": "allergic to any of the non-medicinal ingredients"
+		}]
+
+	}
+}

@@ -1,0 +1,29 @@
+#tablePopup th {
+    text-align: left;
+	padding: 7px; 
+	margin: 5px; 
+	color: grey; 
+	font-weight: bold;
+	font-size:1em;
+	border-right: solid silver 1px;
+	width: 35%;
+}
+#tablePopup td {
+	padding-left:10px;
+}
+
+.copyFoot {
+	font-size:.6em;
+}
+
+.ui-dialog-contain {
+	width: 92.5%;
+	max-width: 600px;
+	margin: 10% auto 15px auto;
+	padding: 0;
+	position: relative;
+	top: -15px;
+}
+/*
+.ui-icon-canadaflag:after { background-image: url("../_images/flag-waving-250.png"); background-size: 22px 22px; }
+*/

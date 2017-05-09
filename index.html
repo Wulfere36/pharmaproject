@@ -1,0 +1,84 @@
+<!-- 
+Author: Maurice Soulliere 
+Application: Winter Project 2017 - Pharmaceutical Company Roche-Canada
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	
+	<link rel="stylesheet" href="_css/reset.css">
+	<link rel="stylesheet" href="_css/jquery.mobile.css">
+	<link rel="stylesheet" href="_css/mystyles.css">
+	
+	<script src="_js/jquery.js"></script>
+	<script src="_js/jquery.mobile.js"></script>
+	<script src="_js/myscript.js"></script>
+	
+</head>
+
+<body>
+
+	<!-- Main Site Page -->
+	<div id="projectMain" data-role="page" data-cache="false">
+	
+		<!-- header section -->
+		<header data-role="header" style="height:56px;">
+			<div style="float:left;width:140px;height:95%;"><img src="_images/NewStarLogo.gif" width="134" height="54" /></div>
+			<div style="float:left;height:95%;padding-top:10px;">
+				<span style="font-size:1.2em;font-weight:600;">Pharmaceutical Company Info Site</span>
+			</div>
+		</header>
+		<!-- end of header -->
+		
+		<!-- main content section -->
+		<section class="ui-content" role="main" style="float:left;margin:5px auto;width:95%;">
+			<div class="ui-grid-a" data-theme="b">
+				<section id="companySection" class="ui-block-a" style="width:45%;margin-right:20px;">
+					<h1>Company</h1>
+					<button id="btnCompanyInfo" class="ui-btn">Company Info</button>
+				</section>
+				<section id="termSection" class="ui-block-b" style="width:45%;">
+					<h1>Terminology</h1>
+					<button id="btnListTerms" class="ui-btn">List of Terms</button>
+				</section>
+			</div>
+		</section>
+		<!-- end of main content -->
+		
+		<!-- footer section -->
+		<footer data-role="footer" data-position="fixed">
+			<nav data-role="navbar" id="navhome">
+			</nav>
+			<div class="copyFoot">Copyright &copy; 2017 - Maurice Soulliere</div>
+		</footer>
+		<!-- end of footer -->
+		
+	</div>
+	<!-- end of main site page -->
+
+	<!-- Start of #popup -->
+	<div data-role="dialog" id="aboutPopup">
+
+		<header data-role="header" data-theme="a">
+			<h1>About</h1>
+		</header>
+
+		<div class="ui-grid-a" data-theme="a">
+			<section id="imageSection" class="ui-block-a" style='width:25%;'></section>
+			<section class="ui-block-b" style='width:70%;'>
+				<table id="tablePopup" style="width: 100%;">
+					<tr><th>Name:</th><td></td></tr>
+					<tr><th>Login ID:</th><td></td></tr>
+					<tr><th>Student Number:</th><td></td></tr>
+				</table>
+			</section>
+		</div>
+	</div>
+	<!-- end of popup page -->
+
+	
+</body>
+</html>

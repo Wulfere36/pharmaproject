@@ -1,0 +1,13 @@
+{
+	"members": [{
+		"name": "Maurice Soulliere",
+		"login": "xxxxxxxx",
+		"number": "999999",
+		"pic": "headshot.jpg"
+	}, {
+		"name": "Marvin the Martian",
+		"login": "yyyyyy",
+		"number": "11111111",
+		"pic": "duck_dodgers_marvin_003_49397.jpg"
+	}]
+}

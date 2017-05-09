@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	
+	<link rel="stylesheet" href="_css/reset.css">
+	<link rel="stylesheet" href="_css/jquery.mobile.css">
+	<link rel="stylesheet" href="_css/mystyles.css">
+	
+	<script src="_js/jquery.js"></script>
+	<script src="_js/jquery.mobile.js"></script>
+	<script src="_js/terminology.js"></script>
+	
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeMKNW4kNtTBFwRcf3x1v7-ciCkV-twm8&callback=initMap"></script>
+	
+</head>
+
+<body>
+
+	<!-- Main Site Page -->
+	<div id="projectTerms" data-role="page" data-cache="false">
+	
+		<!-- header section -->
+		<header data-role="header" style="height:56px;">
+			<div style="float:left;width:140px;height:95%;"><img src="_images/NewStarLogo.gif" width="134" height="54" /></div>
+			<div style="float:left;height:95%;padding-top:10px;">
+				<span style="font-size:1.2em;font-weight:600;">Pharmaceutical Company Info Site</span>
+			</div>
+			<div style="float:right;height:95%;padding-top:10px;">
+				<button id="btnGoHome" class="ui-btn">Home</button>
+				<button id="btnGoCompany" class="ui-btn">Company</button>
+			</div>
+		</header>
+		<!-- end of header -->
+		
+		<!-- main content section -->
+		<section class="ui-content" role="main" style="float:left;margin:5px auto;width:95%;">
+			<div id="termListing" class="ui-grid-b" data-theme="a">
+				<section id="term-block-a" class="ui-block-a"></section>
+				<section id="term-block-b" class="ui-block-b"></section>
+				<section id="term-block-c" class="ui-block-c"></section>
+			</div>
+		</section>
+		<!-- end of main content -->
+		
+		<!-- footer section -->
+		<footer data-role="footer" data-position="fixed">
+			<nav data-role="navbar" id="navhome">
+			</nav>
+			<div class="copyFoot">Copyright &copy; 2017 - Maurice Soulliere</div>
+		</footer>
+		<!-- end of footer -->
+		
+	</div>
+	<!-- end of main site page -->
+
+	<!-- Start of #popup -->
+	<div id="termPopup" data-role="dialog">
+		<header data-role="header" data-theme="a">
+			<h1>Terminology</h1>
+		</header>
+
+		<div id="termData" class="ui-content" data-theme="a">
+		</div>
+	</div>
+	<!-- end of popup page -->
+
+	
+</body>
+</html>

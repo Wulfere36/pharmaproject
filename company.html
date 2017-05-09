@@ -1,0 +1,104 @@
+<!-- 
+Author: Maurice Soulliere 
+Application: Winter Project 2017 - Pharmaceutical Company Roche-Canada
+File: company.html
+Purpose: To list company info
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	
+	<link rel="stylesheet" href="_css/reset.css">
+	<link rel="stylesheet" href="_css/jquery.mobile.css">
+	<link rel="stylesheet" href="_css/mystyles.css">
+	
+	<script src="_js/jquery.js"></script>
+	<script src="_js/jquery.mobile.js"></script>
+	<script src="_js/company.js"></script>
+	
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeMKNW4kNtTBFwRcf3x1v7-ciCkV-twm8&callback=initMap"></script>
+	
+</head>
+
+<body>
+
+	<!-- Main Site Page -->
+	<div id="projectCompany" data-role="page" data-cache="false">
+	
+		<!-- header section -->
+		<header data-role="header" style="height:56px;">
+			<div style="float:left;width:140px;height:95%;"><img src="_images/NewStarLogo.gif" width="134" height="54" /></div>
+			<div style="float:left;height:95%;padding-top:10px;">
+				<span style="font-size:1.2em;font-weight:600;">Pharmaceutical Company Info Site</span>
+			</div>
+			<div style="float:right;height:95%;padding-top:10px;">
+				<button id="btnGoHome" class="ui-btn">Home</button>
+				<button id="btnGoTerminology" class="ui-btn">Terminology</button>
+			</div>
+		</header>
+		<!-- end of header -->
+		
+		<!-- main content section -->
+		<section class="ui-content" role="main" style="float:left;margin:5px auto;width:95%;">
+			<div class="ui-grid-a" data-theme="b">
+				<section id="companyInfo" class="ui-block-a" style="width:45%;margin-right:20px;">
+				</section>
+				<section id="drugInfo" class="ui-block-b" style="width:45%;">
+					<h2>Drug Info</h2>
+					<div id="drugItems" data-role="collapsible-set">
+					</div>			
+				</section>
+			</div>
+		</section>
+		<!-- end of main content -->
+		
+		<!-- footer section -->
+		<footer data-role="footer" data-position="fixed">
+			<nav data-role="navbar" id="navhome">
+			</nav>
+			<div class="copyFoot">Copyright &copy; 2017 - Maurice Soulliere</div>
+		</footer>
+		<!-- end of footer -->
+		
+	</div>
+	<!-- end of main site page -->
+
+	<!-- Start of map page -->
+	<div data-role="page" id="geo" data-cache="false">
+	
+		<!-- header section -->
+		<div data-role="header" style="height:56px;">
+			<div style="float:left;width:140px;height:95%;"><img src="_images/NewStarLogo.gif" width="134" height="54" /></div>
+			<div style="float:left;height:95%;padding-top:10px;">
+				<span style="font-size:1.2em;font-weight:600;">Pharmaceutical Company Info Site</span>
+			</div>
+			<div style="float:right;height:95%;padding-top:10px;">
+				<button id="btnGoHome" class="ui-btn">Home</button>
+				<button id="btnGoTerminology" class="ui-btn">Terminology</button>
+			</div>
+		</div>
+		<!-- end of header -->
+	
+		<div class="ui-grid-solo" data-theme="a" style="clear:both;">
+			<section id="mapSection" class="ui-block-a">
+				<div id="map_canvas" style="height:300px; width:100%;"></div>
+			</section>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<nav data-role="navbar">
+				<ul>
+					<li class="navhomebutton"></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- end of map page -->
+
+	
+</body>
+</html>
